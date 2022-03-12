@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Search</title>
+
+    <!-- cdn font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+
+    <!-- Création de la barre de navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="header-nav ">
+                <img src="/Assets/Images/group-2.svg" width="12%" alt="">
+                <a href="index.html" class="events">[Events]</div></a>
+            </div>
+            <div>
+                <ul class="navlist ">
+                    <li class="list ">
+                        <a href="search.html"><i class="icon fa-solid fa-magnifying-glass"></i>  
+                        Search</a>
+                    </li>
+                    <li class="list">
+                        <a  href="about.html"><i class="icon fa-regular fa-user"></i>  
+                        About</a>
+                    </li>
+                    <li class="list">
+                        <a href="#"><i class="icon fa-solid fa-rss"></i> 
+                        Blog</a>
+                     </li>
+                    <li class="list">
+                        <a  href="#"><i class="icon fa-solid fa-bars"></i>  
+                        More</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- création du contenu -->
+    <main>
+        <section class="content1">
+            <div class="filter">
+                <p><b> Filter by location,host, subject, date, daytime:</b></p>
+            </div>
+            <div class="form">
+                <form  action="">
+                    <label for="location"><b> Location</b></label> <br> <br>
+                    <input type="text">
+                </form>
+                <form  action="">
+                    <label for="host"><b> Host</b></label> <br> <br>
+                    <input type="text">
+                </form>
+                <form  action="">
+                    <label for="subject"><b> Subject</b></label> <br> <br>
+                    <input type="text">
+                </form>
+                <form  action="">
+                    <label for="initial date"><b>Initial Date</b></label> <br> <br>
+                    <input value="06/18/20" type="date">
+                </form>
+                <form   action="">
+                    <label for="finaldate"><b> Final Date</b></label> <br> <br>
+                    <input value="06/18/20" type="date">
+                </form>
+                <form class="choose" action="">
+                    <label for="daytime"><b>Daytime</b></label> <br> <br>
+                    <select name="daytime" id="daytime">
+                        <option value="">Choose... </option>
+                </select>
+                </form>
+                <div class="btn-colored">
+                    <input class="srch" type="button" value="Search">
+                    <button class="btn"><i class="fa-solid fa-pen-to-square"></i>Clear Filter</button>
+                </div>
+            </div>  
+        </section>
+
+        <!-- le contenu avec trois images -->
+        <section class="content2">
+            <div class="result">
+                <p>Search Result Found 7 [Events] Nearby.</p>
+            </div>
+            <div class="figure3">
+                <div class="figure" >
+                    <p>go to [gathering] example</p>
+                    <a href="about.html"><img src="/Assets/Images/group-2.svg" width="70%" alt=""></a>
+                </div>
+                <div class="figure">
+                    <p>go to [gathering] example</p>
+                    <a href="about.html"><img src="/Assets/Images/group-2.svg" width="70%" alt=""></a>
+                </div>
+                <div class="figure">
+                    <p>go to [gathering] example</p>
+                    <a href="about.html"><img src="/Assets/Images/group-2.svg" width="70%" alt=""></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Création du footer -->
+    <footer>
+
+        <!-- Mise en place du premier footer -->
+        <main class="footer1">
+            <section class="f-list">
+                <div class="row-list">
+                    <div class="gauche">
+                        <ul class="home">
+                            <li><a href="index.html"> HOME</a></li>
+                            <li><a href="search.html"> SEARCH</a></li>
+                            <li><a href="about.html">ABOUT US</a> </li>
+                            <li><a href="#"> ADVERTISE</a></li>
+                        </ul>
+                    </div>
+                    <div class="centre">
+                        <img src="/Assets/Icones/mapsnavbar_icon.svg" width="10%" alt="">
+                    </div>
+                    <div class="droite">
+                        <ul class="media">
+                            <li><a href="#"> FACEBOOK</a></li>
+                            <li><a href="#"> TWITTER</a></li>
+                            <li><a href="#"> INSTAGRAM</a></li>
+                            <li><a href="#"> BLOG</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- les 3 colonnes dans le footer de couleur noir -->
+            <section class="f-3col">
+                <div id="subscribe">
+                    <h3>Subscribe</h3>
+                    <input id="email" size="20" type="text"  placeholder="Insert your e-mail here" height="50px">
+                    <input id="send" type="button" value="send">
+                </div>
+                <div id="contact">
+                    <h3>Contact</h3>
+                    <p>Have a question or sugestion?</p>
+                    <a href="mailto:contact@events.com?SUBJECT=Ask Me Anything"> contact@Events.com</a>
+                </div>
+                <div id="about">
+                    <h3>About</h3>
+                    <p>[Events] is an online platform that works to improve and increase <br>
+                        social life conections, when this nightmare that we are curently <br>
+                        living is over <span><a href="about.html">learn more.</a></span></p>
+                </div>
+            </section>
+        </main>
+
+        <!-- mise en place du second footer -->
+        <main class="footer2">
+            <div class="footerimg ">
+                <img  src="/Assets/Icones/facebook_icon.svg" width="25px" alt="">
+                <img  src="/Assets/Icones/twitter_icon.svg" width="25px" alt="">
+                <img  src="/Assets/Icones/instagram_icon.svg" width="25px" alt="">
+                <img  src="/Assets/Icones/tumblr_icon.svg" width="25px" alt="">
+                <img  src="/Assets/Icones/linkedin_icon.svg" width="25px" alt="">
+            </div>
+            <div class="copy ">
+                <p>&copy; 2020 [Events], Inc. All rights reserved</p>
+            </div>
+        </main>
+    </footer>
+</body>
+</html>
